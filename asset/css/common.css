@@ -46,8 +46,13 @@ img{vertical-align: top;}
 img, figure{max-width: 100%;height: auto;}
 address{font-style: normal;}
 header, nav, section, article, figure, footer{display: block;}
-.sr-only{position:absolute;top: 0;left: -9999px;}
 button{border: none;background: none;}
+
+
+/* common class */
+.sr-only{position:absolute;top: 0;left: -9999px;}
+.clearfix::after{content: "";display: block;clear: both;}
+
 
 /* body */
 body{font-family: notokr;font-size: 16px;color: #242424;font-weight: 400;}
@@ -77,4 +82,4 @@ body{font-family: notokr;font-size: 16px;color: #242424;font-weight: 400;}
 /* footer */
 #footer{height: 103px;background: #f42a5f;color: #ffffff;}
 #footer a{margin-top: 25px;margin-left: 25px;}
-#footer address{right: 25px;margin-top: 20px;margin-right: 25px;}
+#footer address{float:right;margin-top: 20px;margin-right: 25px;font-size: 10px;}
