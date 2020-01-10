@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,106 +9,173 @@
     <link rel="stylesheet" href="../asset/css/style.css">
     <script src="../asset/js/jquery-1.12.4.min.js"></script>
 </head>
+
 <body>
     <div id="wrap">
-        <header id="header">
-            <h1 class="logo"></h1>
-        <nav id="gnb">
-            <h2 class="sr-only">주메뉴</h2>
-            <ul>
-                <li class="on">
-                    <a href="">회사소개</a>
-                    <ul>
-                        <li><a href="">전체</a></li>
-                        <li><a href="">초콜릿</a></li>
-                        <li><a href="">아이스크림</a></li>
-                        <li><a href="">스낵</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">홍보센터</a>
-                    <ul>
-                        <li><a href="">홍보영상</a></li>
-                        <li><a href="">CF영상</a></li>
-                        <li><a href="">공장견학</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">회사소개</a>
-                    <ul>
-                        <li><a href="">회사소개</a></li>
-                        <li><a href="">윤리경영</a></li>
-                        <li><a href="">오시는 길</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">고객센터</a>
-                    <ul>
-                        <li><a href="">FAQ</a></li>
-                        <li><a href="">고객의 소리</a></li>
-                        <li><a href="">Q&A</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+
+
+        <header id="header" class="line">
+            <h1 class="logo">
+                <a href=""><img src="../asset/img/common/logo.svg" alt="아람"></a>
+            </h1>
+            <button class="btn_menu">
+                <span class="sr-only">메뉴 열기</span>
+                <span class="line top"></span>
+                <span class="line mid"></span>
+                <span class="line btm"></span>
+            </button>
+            <nav id="gnb">
+                <h2 class="sr-only">주메뉴</h2>
+                <div class="gnb_logo"><img src="asset/img/common/logo.svg" alt=""></div>
+                <ul>
+                    <li>
+                        <a href="">제품소개</a>
+                        <ul>
+                            <li><a href="">전체</a></li>
+                            <li><a href="">초콜릿</a></li>
+                            <li><a href="">아이스크림</a></li>
+                            <li><a href="">스낵</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">홍보센터</a>
+                        <ul>
+                            <li><a href="">홍보영상</a></li>
+                            <li><a href="">CF영상</a></li>
+                            <li><a href="">공장견학</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">회사소개</a>
+                        <ul>
+                            <li><a href="">회사소개</a></li>
+                            <li><a href="">윤리경영</a></li>
+                            <li><a href="">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">고객센터</a>
+                        <ul>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">고객의 소리</a></li>
+                            <li><a href="">Q&A</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
 
         </header>
-        <div class="main_benner">
-        <ul class="icon">
-            <li><a href="">전체</a></li>
-            <li><a href="">초콜릿</a></li>
-            <li><a href="">아이스크림</a></li>
-            <li><a href="">스낵</a></li>
-        </ul>
-        <ul class="pro_intro">
-            <li>
-                <a href="../asset/img/sub_1pro/product_1.jpg"></a>
-                <p>내 마음에 부드러움 한 조각</p>
-                <h3>가나</h3>
-            </li>
-            <li>
-                <a href="../asset/img/sub_1pro/product_2.jpg"></a>
-                <p>마음까지 설렌다~</p>
-                <h3>설레임</h3>
-            </li>
-            <li>
-                <a href="../asset/img/sub_1pro/product_3.jpg"></a>
-                <p>세계 No.1 나쵸</p>
-                <h3>도리토스</h3>
-            </li>
-            <li>
-                <a href=""></a>
-                <p>넌 나의 킷캣</p>
-                <h3>킷캣</h3>
-            </li>
-            <li>
-                <a href="../asset/img/sub_1pro/product_5.jpg"></a>
-                <p>초록빛 산뜻한 멜론의 맛, 메로나</p>
-                <h3>메로나</h3>
-            </li>
-            <li>
-                <a href="../asset/img/sub_1pro/product_6.jpg"></a>
-                <p>고소하고 달콤한  미숫가루라떼</p>
-                <h3>오예쓰 미숫가루라떼</h3>
-            </li>
-            <li>
-                <a href="../asset/img/sub_1pro/product_7.jpg"></a>
-                <p>카땅의 피날레!</p>
-                <h3>꿀땅콩듬뿍 카라멜콘</h3>
-            </li>
-            <li>
-                <a href="../asset/img/sub_1pro/product_8.jpg"></a>
-                <p>둘이서 나눠먹는 재미</p>
-                <h3>쌍쌍바</h3>
-            </li>
-        </ul>
-        <button>더보기</button>
-    </div>
+        <section id="product">
+            <div class="main_banner">
+                <img src="../asset/img/sub_1pro/sub_banner.jpg" alt="">
+                <ul class="icon inner10">
+                    <li>
+                        <a href="">
+                            <img src="../asset/img/sub_1pro/icon1.png" alt="">
+                            <span>전체</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../asset/img/sub_1pro/icon2.png" alt="">
+                            <span>초콜릿</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../asset/img/sub_1pro/icon3.png" alt="">
+                            <span>아이스크림</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../asset/img/sub_1pro/icon4.png" alt="">
+                            <span>스낵</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="pro_intro inner10">
+                    <li class="pro1">
+                        <a href="">
+                            <div>
+                                <img src="../asset/img/sub_1pro/product_1.jpg" alt="">
+                            </div>
+                            <p>내 마음에 부드러움 한 조각</p>
+                            <strong>가나</strong>
+                        </a>
+                    </li>
+                    <li class="pro2">
+                        <a href="detail.html">
+                            <div>
+                                <img src="../asset/img/sub_1pro/product_2.jpg" alt="">
+                            </div>
+                            <p>마음까지 설렌다~</p>
+                            <strong>설레임</strong>
+                        </a>
+                    </li>
+                    <li class="pro3">
+                        <a href="">
+                            <div>
+                                <img src="../asset/img/sub_1pro/product_3.jpg" alt="">
+                            </div>
+                        </a>
+                        <p>세계 No.1 나쵸</p>
+                        <strong>도리토스</strong>
+                        </a>
+                    </li>
+                    <li class="pro4">
+                        <a href="">
+                            <div>
+                                <img src="../asset/img/sub_1pro/product_4.jpg" alt="">
+                            </div>
+                            <p>넌 나의 킷캣</p>
+                            <strong>킷캣</strong>
+                        </a>
+                    </li>
+                    <li class="pro5">
+                        <a href="">
+                            <div>
+                                <img src="../asset/img/sub_1pro/product_5.jpg" alt="">
+                            </div>
+                            <p>초록빛 산뜻한 멜론의 맛, 메로나</p>
+                            <strong>메로나</strong>
+                        </a>
+                    </li>
+                    <li class="pro6">
+                        <a href="">
+                            <div>
+                                <img src="../asset/img/sub_1pro/product_6.jpg" alt="">
+                            </div>
+                            <p>고소하고 달콤한 미숫가루라떼</p>
+                            <strong>오예쓰 미숫가루라떼</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""><div>
+                            <img src="../asset/img/sub_1pro/product_7.jpg" alt="">
+                        </div>
+                            <p>카땅의 피날레!</p>
+                            <strong>꿀땅콩듬뿍 카라멜콘</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""><div>
+                            <img src="../asset/img/sub_1pro/product_8.jpg" alt="">
+                        </div>
+                            <p>둘이서 나눠먹는 재미</p>
+                            <strong>쌍쌍바</strong>
+                        </a>
+                    </li>
+                </ul>
+                <button>더보기</button>
+            </div>
+        </section>
 
         <footer id="footer">
-            <a href=""><img src="" alt=""></a>
+            <a href=""><img src="../asset/img/common/logowhite.svg" alt=""></a>
             <address>주소-서울특별시 강남구 강남대로 369 <br>e-mail- abcdkef@naver.com <br>전화번호- 02-3248-1562</address>
         </footer>
     </div>
 </body>
+
 </html>

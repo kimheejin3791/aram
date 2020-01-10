@@ -47,11 +47,13 @@ img, figure{max-width: 100%;height: auto;}
 address{font-style: normal;}
 header, nav, section, article, figure, footer{display: block;}
 button{border: none;background: none;}
+iframe{border:none;}
 
 
 /* common class */
 .sr-only{position:absolute;top: 0;left: -9999px;}
 .clearfix::after{content: "";display: block;clear: both;}
+.inner10{padding: 0 10px;}
 
 
 /* body */
@@ -59,6 +61,7 @@ body{font-family: notokr;font-size: 16px;color: #242424;font-weight: 400;}
 
 /* header */
 #header{height: 64px;background-color:#fff;}
+#header.line{border-bottom: 11px solid #f42a5f;}
 .logo, #footer img{width: 85px;height: 29px;top: 16px;left: 25px;}
 .logo, .logo img{position: absolute;}
 
@@ -80,6 +83,6 @@ body{font-family: notokr;font-size: 16px;color: #242424;font-weight: 400;}
 
 
 /* footer */
-#footer{height: 103px;background: #f42a5f;color: #ffffff;}
-#footer a{margin-top: 25px;margin-left: 25px;}
-#footer address{float:right;margin-top: 20px;margin-right: 25px;font-size: 10px;}
+#footer{height: 103px;background: #f42a5f;color: #ffffff;position: relative;}
+#footer img{padding-top: 25px;padding-left: 25px;display: inline-block;width: 85px;}
+#footer address{font-size: 10px;margin-top: 20px;display: inline-block;float:right;margin-right: 20px;}
